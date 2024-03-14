@@ -1,0 +1,44 @@
+///////////////////////////////////////////////////////////
+// Mogram Entities
+VIDEO GAME GENERATION
+    Game
+        Scenario
+        Genre
+        Level(s)
+        Play Time
+
+    Main Character(s)
+    NPC(s)
+        
+    Engine
+    Scene Aesthetics & Setup
+    Dimension
+        3D
+        2D
+
+    Player(s)
+        Professional
+        Non-Professional
+
+    Portability
+
+    Runtime Requirements
+        Framework
+        Library(ies)
+            OS-Dependent
+            OS-Independent
+
+    GUI
+
+Large Language Model (LLM)
+    Train Set
+        Tokens
+        Lemmatization and Stem words
+        Technicals
+
+    Test Set
+        Inputs
+        Outputs
+
+///////////////////////////////////////////////////////////
+
