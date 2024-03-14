@@ -59,7 +59,7 @@ Large Language Model (LLM)
 
 ///////////////////////////////////////////////////////////
 
-// Definition
+// Very General and Informal Definition
 Video Game Analyzer is a tool that can generate vide game details based on input prompt text.
 A designer/writer/... can write something about their dream game, and the system will start generating infos and how-tos on creating/designing it.
 
@@ -69,6 +69,13 @@ A designer/writer/... can write something about their dream game, and the system
 Symbol                  Semantic (Meaning)
 ----------              ----------
 //                      Single-Line comment.
+->                      Forward Interaction.
+<-                      Backward Interaction.
+<->                     Normal Interaction (Two-Way).
+?-?                     Unknown Interaction
+?                       Unknown Entity/... .
+C#                      Countable Entity.
+U#                      Uncountable Entity.
 USR                     General User.       
 USR_DESIGNER            Designer User.
 USR_WRITER              Writer User.
