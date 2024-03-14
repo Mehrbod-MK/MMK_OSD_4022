@@ -77,7 +77,7 @@ Symbol                  Semantic (Meaning)
 <<-->>                  Strong Interaction (Bound).
 ?-?                     Unknown Interaction
 ?                       Unknown Entity/... .
-x|x                     Exclusive OR (Only ONE can apply).
+x|x                     Exclusive OR (Only ONE side can be TRUE).
 C#                      Countable Entity.
 U#                      Uncountable Entity.
 **ALL_GAME              All GAME Sub-Entities.
@@ -129,8 +129,13 @@ LLM_TST_OUT             LLM Test Outputs.
 * VIDGAME <<-->> LLM based on TXT_PROMPT which will result in an almost-precise TXT_ANSWER.
 * GAME SCENAR generated/corrected based on TXT_PROMPT.
 
-//// Pseduo-Mathematical Definitions & Relations.
+// Constraints
+* A game can only be 3D or 2D (cannot be none or both at the same time!).
+* Prompt text must not be larger than 20000 words.
+
+//// Pseduo-Mathematical Definitions & Relations/Interactions.
 TXT_PROMPT -> SCENAR
+TXT_ANSWER <- LLM
 SCENAR -> **ALL_GAME
 
 NUM_LVLS <- TIME_PLAY
@@ -139,5 +144,13 @@ GENR, SCENAR <-> CHARS_MAIN, CHARS_NPCS
 // Not decided if TIME_PLAY can affect PLAY_MODE...!
 PLAY_SINGLE, PLAY_MULTI ?-? TIME_PLAY
 
+// Genre affects aesthetics and aesthetics affect dimension and music.
 GENR -> SCN_AEST
 SCN_AEST -> DIM_3D x|x DIM_2D
+SCN_AEST -> MUS
+
+// Game Portability will affect required libraries and libraries might affect portability.
+PORT <-> FRMWRK, LIB
+
+// Genre will affect GUI.
+GENR -> GUI
