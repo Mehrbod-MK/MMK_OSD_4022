@@ -34,6 +34,12 @@ VIDEO GAME GENERATION
 
     GUI
 
+User
+    Designer
+    Writer
+    Project Manager
+    ...
+
 Large Language Model (LLM)
     Train Set
         Tokens
