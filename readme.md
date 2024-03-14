@@ -3,9 +3,6 @@
 
 ### Other members
 Amirhossein Mohammadi
-
 Danial Hosseini
-
 Saman Masoudi
-
 MohammadHossein Minaei
