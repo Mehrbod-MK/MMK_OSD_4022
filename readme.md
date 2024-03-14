@@ -2,7 +2,4 @@
 **Head of Group:  Mehrbod Molla Kazemi**
 
 ### Other members
-Amirhossein Mohammadi
-Danial Hosseini
-Saman Masoudi
-MohammadHossein Minaei
+Amirhossein Mohammadi - Danial Hosseini - Saman Masoudi - MohammadHossein Minaei
