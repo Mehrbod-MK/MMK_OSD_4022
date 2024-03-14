@@ -68,14 +68,19 @@ A designer/writer/... can write something about their dream game, and the system
 // Symbolics Table
 Symbol                  Semantic (Meaning)
 ----------              ----------
+!SW!                    Refers to the software system itself (Macro Definition).
 //                      Single-Line comment.
+*                       Heading Definition / Description.
 ->                      Forward Interaction.
 <-                      Backward Interaction.
 <->                     Normal Interaction (Two-Way).
+<<-->>                  Strong Interaction (Bound).
 ?-?                     Unknown Interaction
 ?                       Unknown Entity/... .
+x|x                     Exclusive OR (Only ONE can apply).
 C#                      Countable Entity.
 U#                      Uncountable Entity.
+**ALL_GAME              All GAME Sub-Entities.
 USR                     General User.       
 USR_DESIGNER            Designer User.
 USR_WRITER              Writer User.
@@ -106,6 +111,7 @@ PORT                    Portability and OSes that game can run on.
 FRMWRK                  Framework.
 LIB                     Library.
 GUI                     Graphical User Interface, such as menus, etc.
+LLM                     Refers to the large language model (LLM) core for this software.
 LLM_TRAIN               Train Set for Large Language Model.
 LLM_TEST                Test Set for Large Language Model.
 LLM_TOK                 LLM Token Words.
@@ -113,3 +119,25 @@ LLM_STEM                Lemmatization and Stem words for LLM.
 LLM_CRN                 Corner cases for LLM.
 LLM_TST_IN              LLM Test Inputs.
 LLM_TST_OUT             LLM Test Outputs.
+
+// Header definition.
+* This software is a set of CHAT(C#), USR(C#), GAME(C#) and single LLM (U#).
+* A CHAT contains USR.
+* A USR can be either USR_WRITER, USR_DESIGNER, USR_MGR or none. Each have specific permissions over a chat.
+* A USR can generate CHAT and inside, generate TXT_PROMPT(C#) to provide input to the !SW!.
+* !SW! will process TXT_PROMPT and generate TXT_ANSWER based on USR TXT_PROMPT.
+* VIDGAME <<-->> LLM based on TXT_PROMPT which will result in an almost-precise TXT_ANSWER.
+* GAME SCENAR generated/corrected based on TXT_PROMPT.
+
+//// Pseduo-Mathematical Definitions & Relations.
+TXT_PROMPT -> SCENAR
+SCENAR -> **ALL_GAME
+
+NUM_LVLS <- TIME_PLAY
+GENR, SCENAR <-> CHARS_MAIN, CHARS_NPCS
+
+// Not decided if TIME_PLAY can affect PLAY_MODE...!
+PLAY_SINGLE, PLAY_MULTI ?-? TIME_PLAY
+
+GENR -> SCN_AEST
+SCN_AEST -> DIM_3D x|x DIM_2D
