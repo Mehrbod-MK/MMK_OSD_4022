@@ -1,6 +1,15 @@
 ///////////////////////////////////////////////////////////
 // Mogram Entities
-VIDEO GAME GENERATION
+User
+    Designer
+    Writer
+    Project Manager
+    ...
+
+Chat
+    Prompt Text
+
+Video Game
     Game
         Scenario
         Genre
@@ -24,6 +33,8 @@ VIDEO GAME GENERATION
         Professional
         Non-Professional
 
+    Music
+
     Portability
 
     Runtime Requirements
@@ -33,12 +44,6 @@ VIDEO GAME GENERATION
             OS-Independent
 
     GUI
-
-User
-    Designer
-    Writer
-    Project Manager
-    ...
 
 Large Language Model (LLM)
     Train Set
@@ -53,3 +58,15 @@ Large Language Model (LLM)
 
 ///////////////////////////////////////////////////////////
 
+// Definition
+Video Game Analyzer is a tool that can generate vide game details based on input prompt text.
+A designer/writer/... can write something about their dream game, and the system will start generating infos and how-tos on creating/designing it.
+
+///////////////////////////////////////////////////////////
+
+// Symbolics Table
+Symbol                  Semantic (Meaning)
+----------              ----------
+//                      Single-Line comment.
+USR                     General User.       
+   
