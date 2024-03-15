@@ -65,6 +65,8 @@ Large Language Model (LLM)
 // Very General and Informal Definition
 Video Game Analyzer is a tool that can generate vide game details based on input prompt text.
 A designer/writer/... can write something about their dream game, and the system will start generating infos and how-tos on creating/designing it.
+They may provide a very basic scenario of what they want, and software will generate content based on their idea.
+
 
 ///////////////////////////////////////////////////////////
 
@@ -134,7 +136,7 @@ LLM_TST_OUT             LLM Test Outputs.
 
 // Constraints
 * A game can only be 3D or 2D (cannot be none or both at the same time!).
-* Prompt text must not be larger than 20000 words.
+* Prompt text must not be larger than 20000 words (?)
 
 //// Pseduo-Mathematical Definitions & Relations/Interactions.
 TXT_PROMPT -> SCENAR
